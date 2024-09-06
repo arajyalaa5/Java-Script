@@ -1,0 +1,36 @@
+<!--1.Voters who are eligible for voting from object, push eligible voters into array. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = [
+            {
+                age:20,
+                name:"Raji"
+            },
+            {
+                age:17,
+                name:"Ankitha"
+            }
+        ]
+
+        var arr = [];
+        for(let v of a)
+        {
+           if(v.age>=18)
+           {
+            arr.push(v.name)
+           }
+        }
+        console.log(arr)
+    
+
+    </script>
+    
+</body>
+</html>
