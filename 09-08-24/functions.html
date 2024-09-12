@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calculate(a, b, operation) {
+    switch (operation) {
+        case 'add':
+            return a + b;
+        case 'subtract':
+            return a - b;
+        case 'multiply':
+            return a * b;
+        case 'divide':
+            if (b !== 0) {
+                return a / b;
+            } else {
+                return "Error: Division by zero is not allowed";
+            }
+        default:
+            return "Error: Invalid operation";
+    }
+}
+let x = 10;
+let y = 5;
+console.log(calculate(x, y, 'add'));
+console.log(calculate(x, y, 'subtract'));
+console.log(calculate(x, y, 'multiply'));
+console.log(calculate(x, y, 'divide'));
+    </script>
+</body>
+</html>
