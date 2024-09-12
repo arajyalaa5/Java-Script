@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>2.Without using split() and replace() methods, remove @ from string.
+        ex: ch@t@n@y@ o/p: chtny
+    </p>
+    
+    <script>
+        let str = "ch@tn@y@";
+        let emp = "";
+        for (let i = 0; i < str.length; i++) {
+            if (str[i] !== "@") {
+                emp += str[i]
+            }
+        }
+        console.log(emp)
+    </script>
+</body>
+
+</html>
