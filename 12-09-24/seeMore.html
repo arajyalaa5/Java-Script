@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 0px solid black;
+            width:280px;
+            height:auto;
+            box-shadow: 0 4px 12px;
+            padding:20px;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%); 
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+    <img src = " " alt="" id="image" width="100px"> 
+    <h2 id="tit"></h2 >
+    <h3 id = "cate"></h3>
+   </div>
+
+    <script>
+       var a = localStorage.getItem("Items");
+       var a1 = JSON.parse(a);
+        
+       console.log(a1);
+
+       var img = document.getElementById("image");
+       img.setAttribute("src",a1["image"])
+      
+
+       var name = document.getElementById("tit");
+       tit.innerText = a1["title"];
+
+       var cate = document.getElementById("cate");
+       cate.innerText = a1["category"];
+
+    </script>
+</body>
+</html>
