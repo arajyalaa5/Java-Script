@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+       fieldset{
+        margin-left: 60px;
+        margin-right: 60px;   
+       }
+
+       .hoby{
+          display: flex;
+          justify-content: space-between;
+       }
+    </style>
+</head>
+<body>
+    <script>
+       //fieldSet
+        var fieldSet = document.createElement("fieldset")
+        var legend = document.createElement("legend")
+        
+        var feildText = document.createTextNode("RAJYALAXMI");
+        legend.appendChild(feildText)
+
+        document.body.append(fieldSet);
+
+        legend.style.fontWeight = "bold"
+
+
+        //image
+
+        var image = document.createElement("img");
+        image.src="https://is5-ssl.mzstatic.com/image/thumb/Purple122/v4/76/e3/dd/76e3ddc6-e763-dd45-0676-20ce3306a52d/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg"
+        image.width="100";
+        image.style.float="right";
+
+
+        //hr
+        var hre = document.createElement("hr");
+        // fieldSet.appendChild(hre)
+        hre.style.marginTop="120px"
+
+
+        //Career_Objective
+        
+        var h1_c = document.createElement("h2")
+        var h1_cdata = document.createTextNode("career Objective")
+        h1_c.appendChild(h1_cdata)
+
+        var cob = document.createElement("p");
+        var cobT = document.createTextNode("Recent software engineering graduate with skills in algorithm design, application development, and cloud computing. Proficient in agile methodologies, and testing, with hands-on experience in microservices, version control, and security. Committed to growth mindset, innovation, and decision-making to support software development strategies and resolve issues. Dedicated to inclusive leadership and contributing to diverse, forward-thinking teams. ")
+        cob.appendChild(cobT);
+       
+        
+        var mainDiv = document.createElement("div")
+        mainDiv.setAttribute("class","hoby")
+
+       
+
+        //hobbies
+        var hobbies = document.createElement("div");
+       
+
+        var h2 = document.createElement("h2");
+        var node1 = document.createTextNode("Hobbies")
+        h2.appendChild(node1);
+
+        var li1 = document.createElement("li")
+        var nodeli1 = document.createTextNode("Chess");
+        li1.appendChild(nodeli1)
+
+        var li2 = document.createElement("li")
+        var nodeli2 = document.createTextNode("Dancing");
+        li2.appendChild(nodeli2);
+
+         var li3 = document.createElement("li")
+        var nodeli3 = document.createTextNode("Criket");
+        li3.appendChild(nodeli3);
+        
+        h2.append(li1,li2,li3)
+
+        hobbies.append(h2);
+        //skills
+        
+        var skills = document.createElement("div");
+        var h2_s = document.createElement("h2");
+        var node1s = document.createTextNode("Skills")
+        h2_s.appendChild(node1s);
+
+        var li1s = document.createElement("li")
+        var nodeli1s = document.createTextNode("Html5");
+        li1s.appendChild(nodeli1s)
+
+        var li2s = document.createElement("li")
+        var nodeli2s = document.createTextNode("Css3");
+        li2s.appendChild(nodeli2s);
+
+        var li3s = document.createElement("li")
+        var nodeli3s = document.createTextNode("Java Script");
+        li3s.appendChild(nodeli3s);
+
+        h2_s.append(li1s, li2s, li3s)
+        
+        skills.append(h2_s);
+        
+        mainDiv.append(hobbies,skills); 
+        //declaration
+        var h2_d = document.createElement("h2")
+        var h2_data = document.createTextNode("Declaration")
+        h2_d.appendChild(h2_data);
+
+        var p1 = document.createElement("p")
+        var p_data = document.createTextNode("I here by conform that the information given above is true to my knowledge and belief.")
+        p1.appendChild(p_data);
+
+
+         var div = document.createElement("div");
+         div.innerText = "Rajyalaxmi";
+         div.style.float="right"
+
+
+        fieldSet.append(legend,image,hre,h1_c,cob,h2,li1,li2,li3,h2_s,li1s,li2s,li3s,h2_d,p1,div)
+
+
+    </script>
+</body>
+</html>
